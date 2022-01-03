@@ -1,0 +1,16 @@
+query AverageScore{
+card(slug:"raul-albiol-tortajada-2021-rare-14")
+  {
+  player{
+    subscriptionsCount
+    allSo5Scores(first:5) {nodes {score}}
+    status {
+              lastFifteenSo5Appearances
+              lastFifteenSo5AverageScore
+              lastFiveSo5Appearances
+              lastFiveSo5AverageScore
+              playingStatus
+         }
+     }
+  }
+}

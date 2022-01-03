@@ -1,0 +1,18 @@
+query AllCardsFromUser {
+  user(slug: "geniusinpyjamas") {
+    paginatedCards {
+      nodes {
+        slug
+        name
+        rarity
+        userOwnersWithRate {
+          from
+          transferType
+          priceInFiat {
+            eur
+          }
+        }
+      }
+    }
+  }
+}

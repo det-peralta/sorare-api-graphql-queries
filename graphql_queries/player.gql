@@ -1,0 +1,25 @@
+query {
+  player(slug: "josep-martinez-riera") {
+    cards (first:1000){
+      nodes {
+        slug
+        rarity
+        userOwnersWithRate {
+          priceInFiat {
+            eur
+          }
+          transferType
+          card {
+            latestEnglishAuction{currentPrice,  }
+            liveSingleBuyOffers{aasmState}
+            liveSingleSaleOffer {
+              priceInFiat {
+                eur
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

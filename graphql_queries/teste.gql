@@ -1,0 +1,21 @@
+query teste {
+  player(slug: "josep-martinez-riera") {
+    cards(first: 2000) {
+      edges {
+        node {
+          userOwnersWithRate {
+            card {
+              slug
+              rarity
+              liveSingleSaleOffer {
+                priceInFiat {
+                  eur
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

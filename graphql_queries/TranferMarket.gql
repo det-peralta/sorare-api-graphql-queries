@@ -1,0 +1,15 @@
+query TranferMarket {
+  player(slug: "josep-martinez-riera") {
+    cards {
+      edges {
+        node {
+          userOwnersWithRate {
+            priceInFiat {
+              eur
+            }
+          }
+        }
+      }
+    }
+  }
+}

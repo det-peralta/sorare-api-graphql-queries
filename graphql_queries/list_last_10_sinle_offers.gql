@@ -1,0 +1,13 @@
+query ListLast10SingleSaleOffers {
+    transferMarket {
+      singleSaleOffers(last: 10) {
+        nodes {
+          
+          card {
+            slug
+          }
+          priceInFiat{eur}
+        }
+      }
+    }
+  }
